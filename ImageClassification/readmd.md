@@ -1,9 +1,9 @@
-# MNIST Image Classification using PyTorch
+# Handwritten Digits(0-9) Classification using PyTorch
 
-This project demonstrates the implementation of an image classification model using the MNIST dataset. The project is built with PyTorch and includes features such as custom validation, early stopping, and the ability to save and load checkpoints. The notebook focuses on training a deep neural network to classify handwritten digits with high accuracy.
+This project demonstrates the implementation of an digit classification model using the MNIST dataset. The project is built with PyTorch and includes features such as custom validation, early stopping, and the ability to save and load checkpoints. The notebook focuses on training a deep neural network to classify handwritten digits with high accuracy.
 
 ## Table of Contents
-- [MNIST Image Classification using PyTorch](#mnist-image-classification-using-pytorch)
+- [Handwritten Digits(0-9) Classification using PyTorch](#handwritten-digits0-9-classification-using-pytorch)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
   - [Requirements](#requirements)
