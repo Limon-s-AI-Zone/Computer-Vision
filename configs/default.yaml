@@ -1,0 +1,32 @@
+seed: 42
+
+data:
+  name: "mnist"   # one of: mnist, fashion_mnist, kmnist, cifar10, image_folder
+  root: "./data"
+  batch_size: 64
+  num_workers: 2
+  pin_memory: true
+  valid_size: 0.2
+
+model:
+  name: "simple_cnn"   # one of: simple_cnn, deep_cnn, mlp, resnet18
+  # in_channels / num_classes are inferred from `data.name`'s registry entry
+  # unless overridden here (e.g. for image_folder, where num_classes depends on data).
+
+train:
+  num_epochs: 50
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "adam"     # adam | sgd
+  load_checkpoint: true
+  save_checkpoint: true
+  checkpoint_path: "checkpoints/{model_name}_{dataset_name}_checkpoint.pth.tar"
+  top_k: 3   # k for top-k accuracy on the test set
+
+output:
+  loss_plot_path: "outputs/{model_name}_{dataset_name}_loss_plot.png"
+  accuracy_plot_path: "outputs/{model_name}_{dataset_name}_accuracy_plot.png"
+  confusion_matrix_path: "outputs/{model_name}_{dataset_name}_confusion_matrix.png"
+  roc_curve_path: "outputs/{model_name}_{dataset_name}_roc_curve.png"
+  pr_curve_path: "outputs/{model_name}_{dataset_name}_pr_curve.png"
+  results_path: "outputs/{model_name}_{dataset_name}_results.json"
