@@ -1,3 +1,13 @@
+outputs/*
+!outputs/simple_cnn_mnist_loss_plot.png
+!outputs/simple_cnn_mnist_accuracy_plot.png
+!outputs/simple_cnn_mnist_confusion_matrix.png
+!outputs/simple_cnn_mnist_roc_curve.png
+!outputs/simple_cnn_mnist_pr_curve.png
+checkpoints/*.pth.tar
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
